@@ -8,17 +8,24 @@ export default function Home() {
 
   return (
     <div>
-      <section className="bg-gray-900 text-white text-center py-20 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Time Looks Better <span className="text-amber-400">On You</span>
-        </h1>
-        <p className="text-gray-300 mb-6">Discover classic, smart and luxury watches.</p>
-        <Link
-          to="/products"
-          className="bg-amber-500 px-6 py-3 rounded-lg font-semibold hover:bg-amber-600"
-        >
-          Shop Now
-        </Link>
+      <section
+        className="relative bg-gray-900 bg-cover bg-center text-white text-center py-28 px-4"
+        style={{ backgroundImage: "url('/images/hero.jpeg')" }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Time Looks Better <span className="text-amber-400">On You</span>
+          </h1>
+          <p className="text-gray-300 mb-6">Discover classic, smart and luxury watches.</p>
+          <Link
+            to="/products"
+            className="bg-amber-500 px-6 py-3 rounded-lg font-semibold hover:bg-amber-600"
+          >
+            Shop Now
+          </Link>
+        </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-4 py-10">
